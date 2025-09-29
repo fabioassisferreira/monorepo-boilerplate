@@ -1,0 +1,17 @@
+{
+  "diffEditor.wordWrap": "on",
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.wordWrapColumn": 140,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.tabSize": 2,
+  "editor.rulers": [140],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.useEditorConfig": true,
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

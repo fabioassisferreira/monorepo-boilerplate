@@ -1,0 +1,7 @@
+.my-class {
+  border: 1px solid red;
+
+  &[data-primary] {
+    background-color: blue;
+  }
+}
