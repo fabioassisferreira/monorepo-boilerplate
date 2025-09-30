@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "prepare": "npx lerna run prepare"
+  },
   "devDependencies": {
     "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
