@@ -2,22 +2,16 @@
 to: src/components/<%=name%>/<%=name%>.tsx
 ---
 import React from "react";
-import styled from "styled-components";
+import styles from "./<%=name%>.module.scss";
 
 export interface <%=name%>Props {
 }
 
-export interface Styled<%=name%>Props {
-}
-
-export const Styled<%=name%> = styled.<%=html%><Styled<%=name%>Props>`
-`;
-
 const <%=name%> = ({
 }: <%=name%>Props) => (
-  <Styled<%=name%>
-  >
-  </Styled<%=name%>>
+  <div className={styles.container}>
+    <%=name%>
+  </div>
 );
 
 export default <%=name%>;

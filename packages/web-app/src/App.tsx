@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import styles from './app.module.css';
-import { clsx, Tag } from 'react-lib';
+import { Button, clsx, Tag } from 'react-lib';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +14,7 @@ function App() {
   console.log('CLass', styles, className);
   return (
     <>
+      <Button />
       <Tag text="Hello from react-lib!" />
       <div className={styles.test}>This div is styled with CSS Modules!</div>
       <div>
