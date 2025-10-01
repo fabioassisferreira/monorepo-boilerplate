@@ -10,10 +10,24 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
+    "lint-src": "eslint src",
+    "lint-src-fix": "eslint src --fix",
+    "lint-fix": "eslint --fix",
+    "format-src": "prettier src --check",
+    "format-src-fix": "prettier src --write",
+    "format-fix": "prettier --write",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "create-component": "hygen component new"
+    "create-component": "hygen component new",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "src/components/**/*.{ts,tsx}": [
+      "npm run lint-fix",
+      "npm run format-fix"
+    ],
+    "src/components/**/*.tsx": "npm run test --findRelatedTests --bail"
   },
   "peerDependencies": {
     "@types/react": "^19.1.13",
@@ -22,6 +36,11 @@
     "react-dom": "^19.1.1",
     "typescript": "^5.9.2",
     "vite": "^7.1.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",

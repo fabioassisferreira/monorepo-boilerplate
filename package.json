@@ -5,16 +5,10 @@
     "packages/*"
   ],
   "scripts": {
-    "lint-staged": "lint-staged",
+    "lint-staged": "lerna run lint-staged",
     "prepare": "lerna run prepare",
     "test": "lerna run test",
     "build": "lerna run build"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
