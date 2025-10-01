@@ -11,6 +11,11 @@
     "build": "lerna run build",
     "pre-commit": "npm run lint-staged"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint-staged"
+    ]
+  },
   "devDependencies": {
     "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
