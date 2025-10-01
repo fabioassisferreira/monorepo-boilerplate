@@ -5,16 +5,11 @@
     "packages/*"
   ],
   "scripts": {
-    "lint-staged": "lint-staged",
+    "lint-staged": "lerna run lint-staged",
     "prepare": "husky",
     "test": "lerna run test",
-    "build": "lerna run build"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,css,scss,md}": [
-      "npm run lint-fix",
-      "npm run format-fix"
-    ]
+    "build": "lerna run build",
+    "pre-commit": "npm run lint-staged"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
