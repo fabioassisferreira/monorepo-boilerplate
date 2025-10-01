@@ -51,7 +51,7 @@ const Tag = ({
         : "16px";
 
   return (
-    <div>
+    <div data-testid="tag">
       <div className={classes["my-class"]} data-primary>
         Css Module Item
       </div>

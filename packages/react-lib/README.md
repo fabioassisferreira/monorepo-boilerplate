@@ -5,11 +5,7 @@ The React Example Lib is a lib that provides reusable React components.
 ## Installation
 
 ```sh
-yarn add react-example-lib
-```
-
-```sh
-npm install react-example-lib
+npm install react-lib
 ```
 
 ## Storybook
@@ -21,5 +17,5 @@ The lib components are presented in [storybook](https://6835d845b846c23caad4056b
 Example component:
 
 ```sh
-import { Tag } from "react-example-lib"
+import { Tag } from "react-lib"
 ```

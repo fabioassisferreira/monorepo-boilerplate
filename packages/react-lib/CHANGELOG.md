@@ -1,3 +1,11 @@
+## 0.7.0
+
+_Sep. 30, 2025_
+
+- refactor: adiciona comentários e JavaDocs ao utilitário `clsx`
+- docs: adiciona/atualiza README.md explicando a estrutura do monorepo
+- test: revisa e corrige testes unitários do componente `Tag`
+
 ## 0.6.0
 
 _Jun. 30, 2025_
