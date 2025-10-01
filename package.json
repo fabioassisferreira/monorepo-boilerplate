@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "lint-staged": "lerna run lint-staged",
-    "prepare": "lerna run prepare",
+    "prepare": "husky",
     "test": "lerna run test",
     "build": "lerna run build"
   },
