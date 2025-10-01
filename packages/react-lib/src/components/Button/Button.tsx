@@ -6,7 +6,7 @@ export interface ButtonProps {
 }
 
 const Button = ({ some }: ButtonProps) => (
-  <div className={styles.container}>Button oh {some} </div>
+  <div className={styles.container}>Button {some} </div>
 );
 
 export default Button;
