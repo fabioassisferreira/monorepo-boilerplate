@@ -2,7 +2,7 @@ import eslint from "@eslint/js";
 import reactPlugin from "eslint-plugin-react";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+export default tseslint.defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   {
@@ -14,7 +14,7 @@ export default tseslint.config(
     },
   },
   reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat['jsx-runtime'],
+  reactPlugin.configs.flat["jsx-runtime"],
   {
     settings: {
       react: {
@@ -27,6 +27,6 @@ export default tseslint.config(
       "react/destructuring-assignment": "error",
       "react/jsx-no-useless-fragment": "error",
       "@typescript-eslint/no-unused-vars": "off",
-    }
-  }
+    },
+  },
 );

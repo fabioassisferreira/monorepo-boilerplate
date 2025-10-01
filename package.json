@@ -5,7 +5,20 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "npx lerna run prepare"
+    "lint-src": "eslint src",
+    "lint-src-fix": "eslint src --fix",
+    "lint-fix": "eslint --fix",
+    "format-src": "prettier src --check",
+    "format-src-fix": "prettier src --write",
+    "format-fix": "prettier --write",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "packages/react-lib/src/components/**/*.{ts,tsx}": [
+      "npm run lint-fix",
+      "npm run format-fix"
+    ],
+    "packages/react-lib/src/components/**/*.tsx": "npm run test --findRelatedTests --bail"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
