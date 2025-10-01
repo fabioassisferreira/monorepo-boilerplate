@@ -23,11 +23,6 @@
     "typescript": "^5.9.2",
     "vite": "^7.1.7"
   },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",

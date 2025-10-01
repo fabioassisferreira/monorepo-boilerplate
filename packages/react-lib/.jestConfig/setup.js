@@ -1,3 +1,3 @@
 import { configure } from "@testing-library/react";
 
-configure({ testIdAttribute: "data-myid" });
+configure({ testIdAttribute: "data-testid" });
