@@ -7,7 +7,21 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "create-module": "hygen module new",
+    "lint-src": "eslint src",
+    "lint-src-fix": "eslint src --fix",
+    "lint-fix": "eslint --fix",
+    "format-src": "prettier src --check",
+    "format-src-fix": "prettier src --write",
+    "format-fix": "prettier --write",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint-fix",
+      "npm run format-fix"
+    ]
   },
   "dependencies": {
     "react": "^19.1.1",
