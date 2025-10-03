@@ -7,7 +7,7 @@ import Button from "./Button";
 describe("<Button />", () => {
   it("should render component with default properties", () => {
     render(<Button some="Tag" />);
-    const element = screen.getByText("Button Tag");
+    const element = screen.getByText("Button hum Tag");
     expect(element).toBeInTheDocument();
   });
 });

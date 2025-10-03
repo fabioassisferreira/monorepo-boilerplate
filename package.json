@@ -10,11 +10,6 @@
     "build": "lerna run build",
     "lint-all": "lerna run lint-staged"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,scss,md,json}": [
-      "lerna run lint-staged"
-    ]
-  },
   "devDependencies": {
     "@types/node": "^24.5.2",
     "@types/react": "^19.1.13",
