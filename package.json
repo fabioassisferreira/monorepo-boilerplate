@@ -8,11 +8,11 @@
     "prepare": "husky",
     "test": "lerna run test",
     "build": "lerna run build",
-    "pre-commit": "lerna run lint-staged"
+    "lint-all": "lerna run lint-staged"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,scss,md,json}": [
-      "echo 'Running lint-staged...'"
+      "lerna run lint-staged"
     ]
   },
   "devDependencies": {
