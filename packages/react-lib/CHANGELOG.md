@@ -1,3 +1,10 @@
+## 0.8.0
+
+_Out. 02, 2025_
+
+- refactor: Reorganiza configurações de testes, lint e pre-commit
+- docs: atualiza README.md explicando a estrutura do monorepo
+
 ## 0.7.0
 
 _Sep. 30, 2025_
@@ -17,7 +24,7 @@ _Jun. 30, 2025_
 
 _May. 29, 2025_
 
-- change Tag and Text default behavior
+- change Tag Text default behavior
 - add storybook
 - add Tag and Text storybook docs
 

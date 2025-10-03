@@ -5,15 +5,14 @@
     "packages/*"
   ],
   "scripts": {
-    "lint-staged": "lerna run lint-staged",
     "prepare": "husky",
     "test": "lerna run test",
     "build": "lerna run build",
-    "pre-commit": "npm run lint-staged"
+    "pre-commit": "lerna run lint-staged"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "npm run lint-staged"
+    "*.{ts,tsx,js,jsx,scss,md,json}": [
+      "echo 'Running lint-staged...'"
     ]
   },
   "devDependencies": {
